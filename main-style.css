@@ -1,0 +1,340 @@
+body {
+    margin: 0;
+    padding: 100px 0 0 0;
+    background-color: #e9e8e4;
+    font-family: -apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+header {
+    width: 82%;
+    height: 150px;
+    margin: auto;
+}
+header .top-menu {
+    height: 50%;
+    background-color: #4d75a3;
+    border-radius: 7px 7px 0 0;
+    display: flex;
+}
+header .top-menu a {
+    height: 100%;
+    text-decoration: none;
+    border-right: 1px solid #41638a;
+    color: #cfcfcf;
+    font-size: 20px;
+    flex-grow: 10;
+    text-align: center;
+    transition: all .3s ease-in-out;
+    line-height: 75px;
+}
+header .top-menu a:first-child {
+    font-weight: bolder;
+    font-size: 20px;
+    flex-grow: 15;
+    color: #ffffff;
+}
+header .top-menu .fa-user{
+    color: #ffffff;
+    flex-grow: 80;
+    text-align: right;
+    padding-right: 20px;
+}
+header .top-menu .fa-user::before {
+    content: "John Doe";
+}
+header .top-menu a:last-child{
+    border: 0;
+}
+header .nav-menu {
+    height: 50%;
+    background-color: #ffffff;
+    border-radius: 0 0 7px 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .nav-menu a {
+    height: 100%;
+    padding: 29px 0;
+    margin: 0 25px;
+    text-decoration: none;
+    color: #b1b1b1;
+    font-size: 20px;
+    box-sizing: border-box;
+    transition: all .2s ease-in-out;
+}
+header .top-menu a:hover,
+header .top-menu a:focus {
+    color: white;
+    background-color: #41638a;
+}
+header .top-menu a:first-child:hover,
+header .top-menu a:first-child:focus {
+    border-radius: 7px 0 0 0;
+}
+header .top-menu a:last-child:hover,
+header .top-menu a:last-child:focus {
+    border-radius: 0 7px 0 0;
+}
+header .nav-menu a:hover,
+header .nav-menu a:focus {
+    border-bottom: 5px solid #4d75a3;
+    color: #4d75a3;
+}
+.profile-menu {
+    margin: 50px auto auto auto;
+    padding: 0 50px;
+    width: calc(82% - 100px);
+    height: 200px;
+    background-color: #ffffff;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+}
+.profile-menu .profile {
+    display: flex;
+    align-items: center;
+    width: 41%;
+    height: 50%;
+    border-right: 1px solid #cfcfcf;
+    flex-flow: 41;
+}
+.profile-menu .profile img {
+    border-radius: 100px;
+}
+.profile-menu .profile-content-wrapper {
+    margin-left: 25px;
+    color: #93aece;
+    line-height: 25px;
+}
+.profile-menu .profile-content-wrapper p {
+    margin-top: 5px;
+    font-size: 13.5px;
+}
+.profile-menu .profile-content-wrapper a {
+    font-size: 25px;
+    text-decoration: none;
+    color: rgb(59, 59, 59);
+}
+.profile-menu .profile-info {
+    flex-grow: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 10px;
+}
+.profile-menu .profile-info a {
+    text-decoration: none;
+    color: #4d75a3;
+    font-size: 25px;
+}
+.profile-menu .profile-info p {
+    color: #4d75a3;
+    line-height: 0;
+    font-size: 14px;
+}
+.profile-menu .buttons {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    flex-grow: 10;
+}
+.profile-menu button {
+    margin-bottom: 10px;
+    width: 70%;
+    height: 45px;
+    color: #ffffff;
+    background-color: #4d75a3;
+    border-radius: 7px;
+    border: 2px solid #4d75a3;
+    font-size: 17px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    outline: none;
+}
+.profile-menu button:last-child {
+    color: #4d75a3;
+    background-color: #ffffff;
+}
+.profile-menu button:first-child:hover {
+    background-color: #41638a;
+    border: 2px solid #41638a;
+}
+.profile-menu button:last-child:hover {
+    background-color: #e9e8e4;
+}
+.windows {
+    margin: 50px auto auto auto;
+    width: 82%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.windows .activity-feed,
+.windows .people-to-follow,
+.windows .massagies {
+    background-color: #ffffff;
+    border-radius: 7px;
+}
+.windows .activity-feed {
+    margin-right: 50px;
+    padding: 30px;
+    width: 27%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 14.5px;
+}
+.windows .activity-feed .header {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.windows .activity-feed-content {
+    height: 100%;
+    padding-left: 40px;
+    border-left: 1px solid #b1b1b1;
+    display: flex;
+    flex-direction: column;
+}
+.windows .activity-feed-content .content {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+.windows .activity-feed-content h4 {
+    margin: 0 0 0 20px;
+    font-weight: 100;
+    color: #5f5f5f;
+    margin: 0;
+}
+.windows .activity-feed-content .fa {
+    margin-left: -58px;
+    padding: 10px 0 10px 10px;
+    background-color: #ffffff;
+    font-size: 22px;
+    color: #797979;
+    position: absolute;
+}
+.windows .activity-feed-content .fa-image {
+    padding-top: 0;
+}
+.windows .activity-feed h2 {
+    font-size: 25px;
+    margin: 0 0 50px 0;
+    font-weight: 100;
+    color: #5f5f5f;
+}
+.windows .activity-feed .header a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #adadad;
+}
+.windows .activity-feed .header a:hover {
+    color: #868686;
+}
+.windows .activity-feed-content a {
+    text-decoration: none;
+    color: #41638a;
+}
+.windows .activity-feed-content .photo-content-images {
+    display: flex;
+    align-items: flex-start;
+}
+.windows .activity-feed-content img {
+    width: 50px;
+    height: 50px;
+    margin: 10px 10px 0 0;
+    border-radius: 5px;
+}
+#last-post {
+    height: 52px;
+    padding: 0 0 0 15px;
+    margin-top: 10px;
+    border-left: 2px solid #41638a;
+    display: flex;
+    align-items: flex-start;
+}
+#last-post p,
+#last-post a {
+    margin: 0;
+}
+#last-post p {
+    margin-top: 2px;
+    color: #5f5f5f;
+}
+#last-post img {
+    margin-top: 0;
+}
+.windows .people-to-follow {
+    margin-right: 50px;
+    margin-right: 50px;
+    padding: 30px 25px 25px 25px;
+    width: 24%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.windows .people-to-follow h2 {
+    margin: 0 0 40px 0;
+    font-size: 25px;
+    font-weight: 100;
+    color: #5f5f5f;
+}
+.windows .people-to-follow-content {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.windows .people-to-follow-content .follow-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.windows .people-to-follow-content h4 {
+    font-size: 15px;
+    margin: 0;
+    color: rgb(59, 59, 59);
+}
+.windows .people-to-follow-content p {
+    color: #868686;
+    font-size: 15.5px;
+}
+.windows .people-to-follow-content .content {
+    display: flex;   
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    line-height: 7px;
+}
+.windows .people-to-follow-content .follow-content button {
+    width: 33%;
+    padding: 5px 0;
+    background-color: #ffffff;
+    border: 1px solid #868686;
+    border-radius: 5px;
+    color: #868686;
+    outline: none;
+    transition: .3s;
+    cursor: pointer;
+}
+.windows .people-to-follow-content .follow-content button:hover {
+    background-color: #e9e8e4;
+}
+.windows .people-to-follow-content img {
+    border-radius: 50px;
+    margin-right: 20px;
+}
+.windows .people-to-follow-content a {
+    width: 70px;
+    height: 50px;
+}
+.windows .massagies {
+    width: 30%;
+}
