@@ -205,7 +205,7 @@ header .nav-menu a:focus {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 .windows .activity-feed-content h4 {
     margin: 0 0 0 20px;
@@ -337,4 +337,64 @@ header .nav-menu a:focus {
 }
 .windows .massagies {
     width: 30%;
+}
+.windows .massagies-header {
+    border-radius: 7px 7px 0 0;
+    background-color: #4d75a3;
+    display: flex;
+    align-items: center;
+    padding: 10px 25px;
+    justify-content: space-between;
+}
+.windows .massagies-header h4 {
+    margin: 0;
+    font-weight: 100;
+    font-size: 18px;
+    color: #ffffff;
+    margin-right: auto;
+}
+.windows .massagies-header img {
+    border-radius: 50px;
+    margin-right: 10px;
+}
+.windows .massagies-header a {
+    text-decoration: none;
+    color: #c9c9c9;
+    margin-left: auto;
+}
+.windows .massagies-header > a:first-child {
+    height: 35px;
+    margin: 0;
+}
+.windows .massagies-header .massagies-header-icons {
+    display: flex;
+    align-items: center;
+}
+.windows .massagies-header-icons a {
+    margin-left: 10px;
+}
+.windows .massagies-header-icons a:hover {
+    color: #979797;
+}
+.windows .massagies-content {
+    height: 100%;
+    padding: 25px;
+    overflow-y: scroll;
+}
+.windows .massagies-content > p {
+    font-size: 10.5px;
+    color: #aaaaaa;
+    margin-bottom: 25px;
+}
+.windows .massage {
+    max-width: 150px;
+    display: block;
+    background-color: #ececec;
+    padding: 10px 20px;
+    border-radius: 23px;
+}
+.windows .massage p {
+    margin: 0;
+    font-size: 14px;
+    color: #5e5e5e;
 }
