@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    padding: 100px 0 0 0;
+    padding: 100px 0 100px 0;
     background-color: #e9e8e4;
     font-family: -apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
     display: flex;
@@ -169,6 +169,7 @@ header .nav-menu a:focus {
 .windows {
     margin: 50px auto auto auto;
     width: 82%;
+    height: 550px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
@@ -273,7 +274,6 @@ header .nav-menu a:focus {
 }
 .windows .people-to-follow {
     margin-right: 50px;
-    margin-right: 50px;
     padding: 30px 25px 25px 25px;
     width: 24%;
     display: flex;
@@ -331,12 +331,13 @@ header .nav-menu a:focus {
     border-radius: 50px;
     margin-right: 20px;
 }
-.windows .people-to-follow-content a {
-    width: 70px;
-    height: 50px;
+.windows .people-to-follow .footer {
+
 }
 .windows .massagies {
     width: 30%;
+    display: flex;
+    flex-direction: column;
 }
 .windows .massagies-header {
     border-radius: 7px 7px 0 0;
@@ -380,21 +381,1115 @@ header .nav-menu a:focus {
     height: 100%;
     padding: 25px;
     overflow-y: scroll;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
 }
-.windows .massagies-content > p {
+.windows .massagies-content .massage-block > p {
     font-size: 10.5px;
     color: #aaaaaa;
     margin-bottom: 25px;
+    height: auto;
 }
 .windows .massage {
     max-width: 150px;
     display: block;
-    background-color: #ececec;
+    background-color: #deeaf7;
     padding: 10px 20px;
-    border-radius: 23px;
+    border-radius: 15px;
+}
+.windows .massage-block:nth-child(2n) {
+    align-self: flex-start;
 }
 .windows .massage p {
     margin: 0;
     font-size: 14px;
     color: #5e5e5e;
 }
+.windows .footer-input {
+    border-top: 1px solid #d1d1d1;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 0 0 7px 7px ;
+}
+.windows .footer-input input {
+    width: 80%;
+    height: 20px;
+    flex-grow: 10;
+    outline: none;
+    border: none;
+    font-size: 17px;
+    margin: 0 10px;
+}
+.windows .footer-input a {
+    text-decoration: none;
+    font-size: 19px;
+    color: #b8b2d8;
+}
+.windows .footer-input a:hover {
+    color: #6f73ad;
+}
+.windows .footer-input a:last-child {
+    display: inline;
+    transform: rotate(10);
+    font-size: 22px;
+}
+.massage-window {
+    width: 82%;
+    background-color: #ffffff;
+    margin: auto;
+    border-radius: 7px;
+    display: flex;
+    height: 738px;
+}
+.massage-window a {
+    text-decoration: none;
+    color: #a9acd3;
+    font-size: 18px;
+}
+.massage-window a:hover {
+    color: #666666;
+}
+.massage-window .nav-menu {
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+}
+.massage-window .nav-menu-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100px;
+    padding: 0  20px;
+    border-right: 1px solid #d6d6d6;
+}
+.massage-window .nav-menu-header p {
+    margin: 0;
+    font-size: 18px;
+    color: #787a99;
+    margin-right: auto;
+}
+.massage-window .nav-menu-header a {
+    margin: 0 10px;
+}
+.massage-window .nav-menu-header .fa-volume-off {
+    font-size: 23px;
+}
+.massage-window .nav-menu .nav-menu-content {
+    display: flex;
+    flex-direction: column;
+}
+.massage-window .nav-menu .nav-menu-content img {
+    border-radius: 50px;
+    margin-right: 12px;
+}
+.massage-window .nav-menu .contacts {
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    line-height: 20px;
+    justify-content: space-between;
+    height: 90px;
+    border: 1px solid #d6d6d6;
+    border-left: none;
+    border-top: none;
+    cursor: pointer;
+    transition: .3s;
+}
+.massage-window .nav-menu .contacts:hover,
+.massage-window .nav-menu .contacts:focus {
+    background-color: #deeaf7;
+}
+.massage-window .nav-menu .contacts:first-child {
+    border-top: 1px solid #d6d6d6;
+}
+.massage-window .nav-menu .contacts-content {
+    margin-right: auto;
+}
+.massage-window .nav-menu-content h4,
+.massage-window .nav-menu-content p {
+    margin: 0;
+    color: #585858;
+}
+.massage-window .nav-menu-content p {
+    color: #727272;
+    font-size: 15px;
+}
+.massage-window .massagies {
+    display: flex;
+    flex-direction: column;
+    width: 72%;
+}
+.massage-window .massagies .header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 600px;
+    padding: 0 25px;
+    border-bottom: 1px solid #d6d6d6;
+}
+.massage-window .massagies .header img {
+    border-radius: 50px;
+    margin-right: 10px;
+}
+.massage-window .massagies .header h4,
+.massage-window .massagies .header p {
+    margin: 0;
+    color: #585858;
+}
+.massage-window .massagies .header .header-content {
+    margin-right: auto;
+}
+.massage-window .massagies .header a {
+    margin-left: 15px;
+    font-size: 20px;
+}
+.massage-window .massagies .header p {
+    font-size: 15px;
+}
+.massage-window .massagies .content {
+    padding: 25px 10px;
+    overflow-y: scroll;
+}
+.massage-window .massagies .content .massage-block {
+    display: flex;
+    align-items: flex-end;
+    max-width: 60%;
+    margin-bottom: 30px;
+} 
+.massage-window .massagies .content img {
+    border-radius: 50px;
+    margin: 0 15px;
+}
+.massage-window .massagies .content p {
+    margin: 0;
+}
+.massage-window .massagies .content .massage-block p:first-child {
+    padding: 15px 30px;
+    background-color: #deeaf7;
+    border-radius: 15px;
+    font-size: 15px;
+    line-height: 20px;
+    color: #585858;
+}
+.massage-window .massagies .content .massage-block p:last-child {
+    font-size: 13px;
+    color: #bbbbbb;
+    margin-top: 10px;
+}
+.massage-window .massagies .content .massage-block:nth-child(2n) {
+    margin-left: auto;
+}
+.massage-window .massagies .input-space {
+    height: 245px;
+    background-color: #eef1f5;
+    padding: 25px 20px;
+    border-radius: 0 0 7px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #d6d6d6;
+}
+.massage-window .massagies .input-space input {
+    width: 80%;
+    height: 40px;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid #d6d6d6;
+    font-size: 15px;
+    margin: 0 10px;
+}
+.massage-window .massagies .input-space button {
+    padding: 11px 40px;
+    font-size: 18px;
+    color: #ffffff;
+    border-radius: 7px;
+    border: none;
+    background-color: #4d75a3;
+    cursor: pointer;
+    outline: none;
+    transition: .3s;
+}
+.massage-window .massagies .input-space button:hover {
+    background-color: #41638a;
+}
+@media (max-width: 1365px) {
+    header,
+    .windows,
+    .massage-window {
+        width: 83%;
+    }
+    .profile-menu {
+        width: calc(83% - 100px);
+    }
+    header {
+        height: 145px;
+    }
+    header .top-menu a,
+    header .nav-menu a,
+    .windows .activity-feed .header a {
+        font-size: 19px !important;
+    }
+    header .top-menu .fa-user {
+        flex-grow: 75;
+    }
+    .profile-menu {
+        height: 190px;
+    }
+    .profile-menu .profile img {
+        width: 95px;
+    }
+    .profile-menu .profile-content-wrapper p,
+    .profile-menu .profile-info p {
+        font-size: 13px;
+    }
+    .profile-menu .profile-content-wrapper a,
+    .profile-menu .profile-info a,
+    .windows .activity-feed h2,
+    .windows .people-to-follow h2 {
+        font-size: 24px;
+    }
+    .profile-menu button {
+        margin-bottom: 9px;
+        width: 67%;
+        height: 43px;
+        font-size: 16px;
+    }
+    .windows {
+        height: 530px;
+    }
+    .windows .activity-feed,
+    .windows .people-to-follow-content h4 {
+        font-size: 14px;
+    }
+    .windows .activity-feed-content .fa {
+        font-size: 21px;
+    }
+    .windows .activity-feed-content img,
+    .windows .people-to-follow-content img {
+        width: 47px;
+        height: 47px;
+    }
+    .windows .people-to-follow-content p {
+        font-size: 15px;
+    }
+    .windows .people-to-follow-content .follow-content button {
+        width: 85px;
+        font-size: 12.5px;
+    }
+    .windows .massagies-header h4 {
+        font-size: 17px;
+    }
+    .windows .massagies-header img {
+        width: 33px;
+    }
+    .windows .massagies-content .massage-block > p {
+        font-size: 10px;
+    }
+    .windows .massage p {
+        font-size: 13px;
+    }
+    .windows .massage-block {
+        width: 185px;
+    }
+    .massage-window .nav-menu-header p {
+        font-size: 17px;
+    }
+    .massage-window .nav-menu .nav-menu-content img {
+        width: 45px;
+        height: 45px;
+    }
+    .massage-window .nav-menu-header a {
+        font-size: 16px;
+    }
+    .massage-window .nav-menu-content h4,
+    .massage-window .nav-menu-content p {
+        font-size: 15px;
+    }
+    .massage-window .massagies .header img {
+        width: 45px;
+    }
+    .massage-window .massagies .header h4, 
+    .massage-window .massagies .header p {
+        font-size: 15px;
+    }
+    .massage-window .massagies .header a {
+        font-size: 19px;
+    }
+    .massage-window .massagies .content .massage-block p:first-child {
+        font-size: 14px;
+    }
+}
+@media (max-width: 1300px) {
+    header,
+    .windows,
+    .massage-window {
+        width: 85%;
+    }
+    .profile-menu {
+        width: calc(85% - 100px);
+    }
+    header {
+        height: 140px;
+    }
+    header .top-menu a,
+    header .nav-menu a,
+    .windows .activity-feed .header a {
+        font-size: 18px !important;
+    }
+    header .top-menu .fa-user {
+        flex-grow: 70;
+    }
+    .profile-menu {
+        height: 185px;
+    }
+    .profile-menu .profile img {
+        width: 90px;
+    }
+    .profile-menu .profile-info p {
+        font-size: 12px;
+    }
+    .profile-menu .profile-content-wrapper p {
+        line-height: 20px;
+    }
+    .profile-menu .profile-content-wrapper a,
+    .profile-menu .profile-info a,
+    .windows .activity-feed h2,
+    .windows .people-to-follow h2 {
+        font-size: 23px;
+    }
+    .profile-menu button {
+        height: 40px;
+        font-size: 15px;
+    }
+    .windows {
+        height: 510px;
+    }
+    .windows .activity-feed,
+    .windows .people-to-follow-content h4 {
+        font-size: 13px;
+    }
+    .windows .activity-feed-content .fa {
+        font-size: 20px;
+    }
+    .windows .activity-feed-content img,
+    .windows .people-to-follow-content img {
+        width: 45px;
+        height: 45px;
+    }
+    .windows .people-to-follow-content p {
+        font-size: 14px;
+    }
+    .windows .people-to-follow-content .follow-content button {
+        width: 85px;
+        font-size: 12px;
+    }
+    .windows .massagies-header h4 {
+        font-size: 16px;
+    }
+    .windows .massagies-content .massage-block > p {
+        font-size: 9px;
+    }
+    .windows .massage p {
+        font-size: 12px;
+    }
+    .windows .massage-block {
+        width: 180px;
+    }
+    .massage-window .nav-menu-header p {
+        font-size: 16px;
+    }
+    .massage-window .nav-menu .nav-menu-content img {
+        width: 40px;
+        height: 40px;
+    }
+    .massage-window .nav-menu-header a {
+        font-size: 15px;
+    }
+    .massage-window .nav-menu-content h4,
+    .massage-window .nav-menu-content p {
+        font-size: 14px;
+    }
+    .massage-window .massagies .header img {
+        width: 40px;
+    }
+    .massage-window .massagies .header h4, 
+    .massage-window .massagies .header p {
+        font-size: 14px;
+    }
+    .massage-window .massagies .header a {
+        font-size: 18px;
+    }
+    .massage-window .massagies .content .massage-block p:first-child {
+        font-size: 13px;
+    }
+}
+@media (max-width: 1200px) {
+    header,
+    .windows,
+    .massage-window {
+        width: 87%;
+    }
+    .profile-menu {
+        width: calc(87% - 100px);
+    }
+    header {
+        height: 135px;
+    }
+    header .top-menu a,
+    header .nav-menu a,
+    .windows .activity-feed .header a {
+        font-size: 17px !important;
+    }
+    header .top-menu .fa-user {
+        flex-grow: 65;
+    }
+    .profile-menu {
+        height: 180px;
+    }
+    .profile-menu .profile img {
+        width: 85px;
+    }
+    .profile-menu .profile-info p {
+        font-size: 11px;
+    }
+    .profile-menu .profile-content-wrapper p {
+        line-height: 19px;
+    }
+    .profile-menu .profile-content-wrapper a,
+    .profile-menu .profile-info a,
+    .windows .activity-feed h2,
+    .windows .people-to-follow h2 {
+        font-size: 22px;
+    }
+    .profile-menu button {
+        height: 38px;
+        font-size: 14px;
+    }
+    .windows {
+        height: 490px;
+    }
+    .windows .activity-feed,
+    .windows .people-to-follow-content h4 {
+        font-size: 12px;
+    }
+    .windows .activity-feed-content .fa {
+        font-size: 19px;
+    }
+    .windows .activity-feed-content img,
+    .windows .people-to-follow-content img {
+        width: 40px;
+        height: 40px;
+    }
+    .windows .people-to-follow-content p {
+        font-size: 13px;
+    }
+    .windows .people-to-follow-content .follow-content button {
+        width: 80px;
+        font-size: 11px;
+    }
+    .windows .massagies-header h4 {
+        font-size: 15px;
+    }
+    .windows .massagies-content .massage-block > p {
+        font-size: 8px;
+    }
+    .windows .massage p {
+        font-size: 11px;
+    }
+    .windows .massage-block {
+        width: 175px;
+    }
+    .massage-window .nav-menu-header p {
+        font-size: 15px;
+    }
+    .massage-window .nav-menu-header a {
+        font-size: 14px;
+    }
+    .massage-window .nav-menu-content h4,
+    .massage-window .nav-menu-content p {
+        font-size: 13px;
+    }
+    .massage-window .massagies .header h4, 
+    .massage-window .massagies .header p {
+        font-size: 13px;
+    }
+    .massage-window .massagies .header a {
+        font-size: 17px;
+    }
+    .massage-window .massagies .content .massage-block p:first-child {
+        font-size: 12px;
+    }
+}
+@media (max-width: 1100px) {
+    header,
+    .windows,
+    .massage-window {
+        width: 89%;
+    }
+    .profile-menu {
+        width: calc(89% - 100px);
+    }
+    header {
+        height: 130px;
+    }
+    header .top-menu a,
+    header .nav-menu a,
+    .windows .activity-feed .header a {
+        font-size: 16px !important;
+    }
+    header .top-menu .fa-user {
+        flex-grow: 60;
+    }
+    .profile-menu {
+        height: 175px;
+    }
+    .profile-menu .profile img {
+        width: 80px;
+    }
+    .profile-menu .profile-content-wrapper p {
+        line-height: 18px;
+    }
+    .profile-menu .profile-content-wrapper a,
+    .profile-menu .profile-info a,
+    .windows .activity-feed h2,
+    .windows .people-to-follow h2 {
+        font-size: 21px;
+    }
+    .profile-menu button {
+        height: 38px;
+        font-size: 13px;
+    }
+    .windows {
+        height: 480px;
+    }
+    .windows .activity-feed,
+    .windows .people-to-follow-content h4 {
+        font-size: 11px;
+    }
+    .windows .activity-feed-content .fa {
+        font-size: 18px;
+    }
+    .windows .activity-feed-content img,
+    .windows .people-to-follow-content img {
+        width: 35px;
+        height: 35px;
+    }
+    .windows .people-to-follow-content p {
+        font-size: 12px;
+    }
+    .windows .people-to-follow-content .follow-content button {
+        width: 75px;
+        font-size: 11px;
+    }
+    .windows .massagies-header h4 {
+        font-size: 14px;
+    }
+    .windows .massage p {
+        font-size: 10px;
+    }
+    .windows .massage-block {
+        width: 165px;
+    }
+    .massage-window .nav-menu-header p {
+        font-size: 14px;
+    }
+    .massage-window .nav-menu-header a {
+        font-size: 13px;
+    }
+    .massage-window .nav-menu-content h4,
+    .massage-window .nav-menu-content p {
+        font-size: 12px;
+    }
+    .massage-window .massagies .header h4, 
+    .massage-window .massagies .header p {
+        font-size: 12px;
+    }
+    .massage-window .massagies .header a {
+        font-size: 16px;
+    }
+    .massage-window .massagies .content .massage-block p:first-child {
+        font-size: 11px;
+    }
+}
+@media (max-width: 1015px) {
+    header {
+        width: calc(70% + 60px);
+    }
+    .profile-menu {
+        width: calc(70% + 30px);
+        padding: 0 15px;
+    }
+    .windows {
+        height: 1350px;
+        flex-direction: column;
+        margin: 50px 0;
+        width: 100%;
+    }
+    .windows .activity-feed {
+        height: 550px;
+        margin: auto;
+        width: 70%;
+        margin-bottom: 50px;
+    }
+    .windows .people-to-follow {
+        height: 650px;
+        width: calc(70% + 10px);
+        margin: auto;
+    }
+    .windows .massagies {
+        display: none;
+    }
+    .nav-menu-content .contacts-content,
+    .nav-menu-content .massage-date,
+    .nav-menu .nav-menu-header,
+    .massage-window .massagies .header {
+        display: none;
+    }
+    .massage-window {
+        height: 565px;
+        width: calc(70% + 60px);
+    }
+    .massage-window .massagies .content {
+        padding: 25px 0;
+    }
+    .massage-window .nav-menu .contacts {
+        width: 43px;
+        height: 100px;
+    }
+    .massage-window .nav-menu .contacts img {
+        margin: 0;
+    }
+    .massage-window .massagies {
+        width: auto;
+    }
+    header .top-menu .fa-user {
+        flex-grow: 40;
+    }
+    header .top-menu a, 
+    header .nav-menu a {
+        font-size: 14px !important;
+    }
+    .profile-menu {
+        height: 150px;
+    }
+    .profile-menu .profile img {
+        width: 70px;
+    }
+    .profile-menu .profile-content-wrapper a, 
+    .profile-menu .profile-info a {
+        font-size: 18px;
+    }
+    .profile-menu .profile-content-wrapper {
+        margin-left: 15px;
+    }
+    .profile-menu .profile-content-wrapper p {
+        font-size: 12px;
+    } 
+    .profile-menu .profile-info p {
+        font-size: 11px;
+    }
+    .windows .activity-feed h2, 
+    .windows .people-to-follow h2 {
+        font-size: 30px;
+    }
+    .windows .activity-feed .fa {
+        font-size: 20px;
+    }
+    .windows .activity-feed {
+        font-size: 16px;
+    }
+    .windows .activity-feed-content img {
+        width: 50px;
+        height: 50px;
+    }
+    .windows .people-to-follow-content img {
+        width: 60px;
+        height: 60px;
+    }
+    .windows .people-to-follow-content h4 {
+        font-size: 20px;
+    }
+    .windows .people-to-follow-content p {
+        font-size: 15px;
+    }
+    .windows .people-to-follow-content .follow-content button {
+        width: 120px;
+        height: 35px;
+        font-size: 15px;
+    }
+}
+@media (max-width: 900px) {
+    header {
+        width: calc(75% + 60px);
+    }
+    .profile-menu {
+        width: calc(75% + 30px);
+    }
+    .windows .activity-feed {
+        width: 75%;
+    }
+    .windows .people-to-follow {
+        width: calc(75% + 10px);
+    }
+    .massage-window {
+        height: 565px;
+        width: calc(75% + 60px);
+    }
+}
+@media (max-width: 800px) {
+    header {
+        height: 125px;
+    }
+    header .top-menu .fa-user {
+        flex-grow: 20;
+    }
+    header .top-menu a, 
+    header .nav-menu a {
+        font-size: 12px !important;
+    }
+    header .nav-menu a {
+        margin: 0 15px;
+    }
+    .profile-menu {
+        height: 350px;
+        flex-direction: column;
+    }
+    .profile-menu .profile img {
+        width: 70px;
+    }
+    .profile-menu .profile {
+        border: none;
+        width: 70%;
+    }
+    .profile-menu .profile-content-wrapper a, 
+    .profile-menu .profile-info a {
+        font-size: 25px;
+    }
+    .profile-menu .profile-info div {
+        margin: 0 20px;
+    }
+    .profile-menu .profile-content-wrapper p {
+        font-size: 15px;
+    } 
+    .profile-menu button {
+        width: 380%;
+        font-size: 15px;
+        height: 40px;
+    }
+    .profile-menu .buttons {
+        width: auto;
+    }
+    .windows {
+        height: auto;
+    }
+    .windows .activity-feed h2, 
+    .windows .people-to-follow h2 {
+        font-size: 25px;
+    }
+    .windows .activity-feed .fa {
+        font-size: 18px;
+    }
+    .windows .activity-feed {
+        font-size: 15px;
+        height: 470px;
+    }
+    .windows .activity-feed-content img {
+        width: 45px;
+        height: 45px;
+    }
+    .windows .people-to-follow {
+        height: 550px;
+    }
+    .windows .people-to-follow-content img {
+        width: 50px;
+        height: 50px;
+    }
+    .windows .people-to-follow-content h4 {
+        font-size: 18px;
+    }
+    .windows .people-to-follow-content p {
+        font-size: 14px;
+    }
+    .windows .people-to-follow-content .follow-content button {
+        width: 110px;
+        height: 33px;
+        font-size: 15px;
+    }
+    .massage-window .massagies .content .massage-block img {
+        width: 45px;
+    }
+}
+@media (max-width: 700px) {
+    header .top-menu .fa-user {
+        flex-grow: 15;
+    }
+    header .top-menu a, 
+    header .nav-menu a {
+        font-size: 12px !important;
+    }
+    header .nav-menu a {
+        margin: 0 15px;
+    }
+    .profile-menu .profile img {
+        width: 70px;
+    }
+    .profile-menu .profile {
+        width: 70%;
+    }
+    .profile-menu .profile-content-wrapper a, 
+    .profile-menu .profile-info a {
+        font-size: 25px;
+    }
+    .profile-menu .profile-info div {
+        margin: 0 20px;
+    }
+    .profile-menu .profile-content-wrapper p {
+        font-size: 15px;
+    } 
+    .profile-menu button {
+        width: 380%;
+        font-size: 15px;
+        height: 40px;
+    }
+    .windows {
+        height: auto;
+    }
+    .windows .activity-feed h2, 
+    .windows .people-to-follow h2 {
+        font-size: 23px;
+    }
+    .windows .activity-feed .fa {
+        font-size: 17px;
+    }
+    .windows .activity-feed {
+        font-size: 14px;
+        height: 460px;
+    }
+    .windows .activity-feed-content img {
+        width: 45px;
+        height: 45px;
+    }
+    .windows .people-to-follow {
+        height: 530px;
+    }
+    .windows .people-to-follow-content img {
+        width: 45px;
+        height: 45px;
+    }
+    .windows .people-to-follow-content h4 {
+        font-size: 16px;
+    }
+    .windows .people-to-follow-content p {
+        font-size: 13px;
+    }
+    .windows .people-to-follow-content .follow-content button {
+        width: 110px;
+        height: 33px;
+        font-size: 15px;
+    }
+    .massage-window {
+        height: 337px;
+    }
+    .massage-window .nav-menu-content .contacts {
+        padding: 5px;
+        height: auto;
+    }
+    .massage-window .massagies .content .massage-block img {
+        width: 40px;
+    }
+}
+@media (max-width: 600px) {
+    header .top-menu .fa-user {
+        flex-grow: 13;
+    }
+    header .top-menu a, 
+    header .nav-menu a {
+        font-size: 12px !important;
+    }
+    header .nav-menu a {
+        margin: 0 15px;
+    }
+    .profile-menu .profile img {
+        width: 70px;
+    }
+    .profile-menu .profile {
+        width: 70%;
+    }
+    .profile-menu .profile-content-wrapper a, 
+    .profile-menu .profile-info a {
+        font-size: 23px;
+    }
+    .profile-menu .profile-info div {
+        margin: 0 20px;
+    }
+    .profile-menu .profile-content-wrapper p {
+        font-size: 15px;
+    } 
+    .profile-menu button {
+        width: 330%;
+        font-size: 15px;
+        height: 40px;
+    }
+    .windows {
+        height: auto;
+    }
+    .windows .activity-feed h2, 
+    .windows .people-to-follow h2 {
+        font-size: 21px;
+    }
+    .windows .activity-feed .fa {
+        font-size: 17px;
+    }
+    .windows .activity-feed {
+        font-size: 13px;
+        height: 450px;
+    }
+    .windows .activity-feed-content img {
+        width: 45px;
+        height: 45px;
+    }
+    .windows .people-to-follow {
+        height: 530px;
+    }
+    .windows .people-to-follow-content img {
+        width: 42px;
+        height: 42px;
+    }
+    .windows .people-to-follow-content h4 {
+        font-size: 15px;
+    }
+    .windows .people-to-follow-content p {
+        font-size: 12px;
+    }
+    .windows .people-to-follow-content .follow-content button {
+        width: 110px;
+        height: 33px;
+        font-size: 15px;
+    }
+    .massage-window {
+        height: 337px;
+    }
+    .massage-window .nav-menu-content .contacts {
+        padding: 5px;
+        height: auto;
+    }
+    .massage-window .massagies .content .massage-block img {
+        display: none;
+    }
+    .massage-window .massagies .content .massage-block {
+        padding: 5px;
+    }
+    .massage-window .massagies .content .massage-block p:first-child {
+        font-size: 10px;
+    }
+}
+@media (max-width: 500px) {
+    header .top-menu .fa-user {
+        flex-grow: 10;
+    }
+    header .top-menu a, 
+    header .nav-menu a {
+        font-size: 12px !important;
+    }
+    header .nav-menu a {
+        margin: 0 10px;
+    }
+    .profile-menu .profile img {
+        width: 70px;
+    }
+    .profile-menu .profile {
+        width: 85%;
+    }
+    .profile-menu .profile-content-wrapper a, 
+    .profile-menu .profile-info a {
+        font-size: 23px;
+    }
+    .profile-menu .profile-info div {
+        margin: 0 20px;
+    }
+    .profile-menu .profile-content-wrapper p {
+        font-size: 14px;
+    } 
+    .profile-menu button {
+        width: 270%;
+        font-size: 15px;
+        height: 40px;
+    }
+    .windows {
+        height: auto;
+    }
+    .windows .activity-feed {
+        font-size: 13px;
+        height: 430px;
+    }
+    .windows .activity-feed-content img {
+        width: 40px;
+        height: 40px;
+    }
+    .windows .people-to-follow {
+        height: 510px;
+    }
+    .windows .people-to-follow-content h4 {
+        font-size: 14px;
+    }
+    .windows .people-to-follow-content p {
+        font-size: 11px;
+    }
+    .windows .people-to-follow-content .follow-content button {
+        width: 110px;
+        height: 33px;
+        font-size: 15px;
+    }
+    .massage-window {
+        height: 337px;
+    }
+    .massage-window .nav-menu-content .contacts {
+        padding: 5px;
+        height: auto;
+    }
+    .massage-window .massagies .content .massage-block {
+        padding: 5px;
+    }
+    .massage-window .massagies .content .massage-block p:first-child {
+        font-size: 10px;
+        padding: 10px;
+    }
+    .massage-window .massagies .input-space {
+        padding: 20px 5px;
+    }
+    .massage-window .massagies .input-space button {
+        padding: 10px;
+    }
+}
+@media (max-width: 400px) {
+    header .top-menu .fa-user {
+        flex-grow: 10;
+    }
+    header .top-menu a, 
+    header .nav-menu a {
+        font-size: 12px !important;
+    }
+    header .nav-menu a {
+        margin: 0 5px;
+    }
+    .profile-menu .profile img {
+        width: 70px;
+    }
+    .profile-menu .profile-content-wrapper a, 
+    .profile-menu .profile-info a {
+        font-size: 23px;
+    }
+    .profile-menu .profile-info div {
+        margin: 0 12px;
+    }
+    .profile-menu .profile-content-wrapper p {
+        font-size: 12px;
+    } 
+    .profile-menu button {
+        width: 220%;
+        font-size: 15px;
+        height: 40px;
+    }
